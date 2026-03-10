@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swetha Sengottuvelu | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Swetha Sengottuvelu, Data Analyst specializing in Business operations and Business Intelligence.">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="bg-mesh"></div>
+    <div class="blob-extra"></div>
+    <!-- Header (Sticky Navbar) -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="nav-brand">
+                <span class="logo-ss">SS</span>
+                <span class="brand-name">SWETHA</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="particle" style="top: 20%; left: 10%; --d: 15s; width: 4px; height: 4px;"></div>
+        <div class="particle" style="top: 60%; left: 80%; --d: 20s; width: 6px; height: 6px;"></div>
+        <div class="particle" style="top: 40%; left: 50%; --d: 12s; width: 3px; height: 3px;"></div>
+        <div class="container reveal">
+            <!-- Content Aligned to Left -->
+            <div class="hero-content">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-title">
+                    <span class="gradient-text" id="typing-text"></span>
+                </h1>
+                <div class="hero-sub-title">
+                    Aspiring Data Analyst
+                </div>
+                <p class="hero-description">
+                    Turning raw data into actionable insights for smarter business decisions.</p>
+
+                <div class="btn-group main-btns">
+                    <a href="/assets/swetha_resume.pdf" download class="btn btn-primary"><i class="fas fa-download"></i>
+                        Download Resume</a>
+                    <a href="https://www.linkedin.com/in/swetha-sengottuvelu-764b8027a/" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/SwethaDataHub1521" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-github"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#projects" class="btn btn-secondary"><i class="fas fa-folder-open"></i> View Projects</a>
+                    <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-photo-wrapper">
+                <div class="profile-card-rect">
+                    <img src="{{ url_for('static', filename='images/swetha_profile_pro.jpg') }}"
+                        alt="Swetha Sengottuvelu" class="hero-photo-rect">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-dark-section">
+        <div class="container reveal">
+            <h2 class="section-heading"><span>About Me</span></h2>
+            <div class="about-text-wrapper">
+                <p>
+                    I am an aspiring Data Analyst with an MCA background and a strong passion for transforming raw data
+                    into meaningful insights. I enjoy analyzing datasets, identifying patterns, and turning complex
+                    information into clear and actionable solutions.
+                </p>
+                <p>
+                    I work with tools such as Python, SQL, and Power BI to analyze data, build interactive dashboards,
+                    and support data-driven decision making. My goal is to help organizations improve efficiency and
+                    make smarter business decisions.
+                </p>
+                <p>
+                    I continuously enhance my skills by working on real-world projects and exploring new data analysis
+                    techniques to deliver valuable business intelligence insights.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="stats-section">
+        <div class="container reveal">
+            <h2 class="section-heading"><span>Skills</span></h2>
+            <div class="stats-grid">
+                <!-- Card 1 -->
+                <div class="glass-card">
+                    <div class="icon-bulb">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="stat-title">Python</div>
+                    <div class="stat-text">Data analysis, automation, and data cleaning using Pandas and NumPy.</div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card">
+                    <div class="icon-bulb">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="stat-title">SQL</div>
+                    <div class="stat-text">Writing complex queries, joins, aggregations, and database analysis.</div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card">
+                    <div class="icon-bulb">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="stat-title">Power BI</div>
+                    <div class="stat-text">Building interactive dashboards and business intelligence reports.</div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-card">
+                    <div class="icon-bulb">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <div class="stat-title">Excel</div>
+                    <div class="stat-text">Advanced Excel analysis using Pivot Tables, Power Query, and formulas.</div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="glass-card">
+                    <div class="icon-bulb">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="stat-title">Data Visualization</div>
+                    <div class="stat-text">Presenting insights using charts, dashboards, and reports.</div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="glass-card">
+                    <div class="icon-bulb">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="stat-title">Machine Learning</div>
+                    <div class="stat-text">Building predictive models using Scikit-learn and Python.</div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="glass-card">
+                    <div class="icon-bulb">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <div class="stat-title">Data Cleaning</div>
+                    <div class="stat-text">Preparing datasets by handling missing values and inconsistencies.</div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="glass-card">
+                    <div class="icon-bulb">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-title">Statistics</div>
+                    <div class="stat-text">Applying statistical techniques to analyze trends and patterns.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container reveal">
+            <h2 class="section-heading"><span>Projects</span></h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='img/cattle_ai_health_monitoring_1772787415138.png') }}"
+                            alt="Cattle Health Monitoring Project">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-date">January 2025</div>
+                        <h3>Efficient AI-Driven Health Monitoring & Facial Recognition in Cattle Farms</h3>
+                        <p>Developed an AI system that identifies individual cattle using facial recognition and
+                            monitors health conditions in real time. The system detects abnormal behavior and early
+                            disease symptoms to support preventive care and improve farm productivity.</p>
+                        <div class="tag-group">
+                            <span class="work-tag">Python</span>
+                            <span class="work-tag">Computer Vision</span>
+                            <span class="work-tag">Deep Learning</span>
+                            <span class="work-tag">IoT</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='img/smart_dustbin_iot_cloud_1772787441294.png') }}"
+                            alt="Smart Dustbin Project">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-date">June 2023</div>
+                        <h3>Smart Dustbin with Cloud Monitoring System</h3>
+                        <p>Built an IoT-enabled smart dustbin that monitors waste levels using ultrasonic sensors and
+                            sends real-time updates to a cloud dashboard. The system automatically alerts when the bin
+                            is full to improve waste management efficiency.</p>
+                        <div class="tag-group">
+                            <span class="work-tag">Python</span>
+                            <span class="work-tag">IoT</span>
+                            <span class="work-tag">Cloud Integration</span>
+                            <span class="work-tag">Sensors</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications-section">
+        <div class="container reveal">
+            <h2 class="section-heading"><span>Publications</span></h2>
+            <div class="publications-grid">
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <img src="{{ url_for('static', filename='img/cattle_ai_publication.png') }}" alt="AI-Driven Cattle Health Monitoring Research">
+                    </div>
+                    <div class="publication-content">
+                        <span class="publication-year">2025</span>
+                        <h3 class="publication-title">Efficient AI-Driven Health Monitoring &amp; Facial Recognition in Cattle Farms</h3>
+                        <p class="publication-desc">Built an AI system that identifies cattle using facial recognition and monitors their health in real time, improving early disease detection and reducing manual tracking effort.</p>
+                        <div class="publication-meta">
+                            <span class="publication-source"><i class="fas fa-book"></i> IEEE Xplore</span>
+                        </div>
+                        <a href="https://ieeexplore.ieee.org/document/11085758" target="_blank" rel="noopener noreferrer" class="publication-btn">
+                            <i class="fas fa-external-link-alt"></i> View Paper
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container reveal">
+            <h2 class="section-heading"><span>Get In Touch</span></h2>
+            <p class="section-description">
+                I'm currently looking for new opportunities and collaborations. Feel free to reach out for a
+                project
+                or just a professional connect!
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Left Card: Contact Information -->
+            <div class="contact-card">
+                <h3 class="card-title">Contact Information</h3>
+                <div class="contact-info-list">
+                    <div class="contact-item">
+                        <div class="contact-icon-box">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:swethavel21@gmail.com">swethavel21@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-box">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Location</h4>
+                            <p>Tamil Nadu, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-box">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+916382370450">+91-6382370450</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Card: Professional Details -->
+            <div class="contact-card">
+                <h3 class="card-title">Professional Details</h3>
+                <div class="pro-details-list">
+                    <div class="detail-item">
+                        <div class="contact-icon-box">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Education</h4>
+                            <p>MCA Student – K.S.R College of Engineering</p>
+                        </div>
+                    </div>
+                    <div class="detail-item" style="flex-direction: column; gap: 0.5rem; margin-top: 1rem;">
+                        <h4
+                            style="color: var(--text-secondary); font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">
+                            Availability</h4>
+                        <ul class="availability-list">
+                            <li><i class="fas fa-check-circle"></i> Open to Internships</li>
+                            <li><i class="fas fa-check-circle"></i> Open to Full-Time Job Opportunities</li>
+                            <li><i class="fas fa-check-circle"></i> Available for Freelance Projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© <span id="copyright-year"></span> Swetha Sengottuvelu. Transforming Data into Decisions.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
